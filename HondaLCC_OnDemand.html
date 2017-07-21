@@ -35,8 +35,9 @@
 
 
                     <!-- AspenSelectDealerLine.ascx END -->
-                    <a href="HondaLCC_home.html"><img id="p_lt_zoneTop_EditableImage_imgImage" class="HondaAspenLogo" src="./images/Honda-Logo-Blue.png" alt="" style="border-width:0px;border:0px;">
-                        </a>
+                    <a href="HondaLCC_home.html"><img id="p_lt_zoneTop_EditableImage_imgImage" class="HondaAspenLogo" src="./images/Honda-Logo-Blue.png"
+                            alt="" style="border-width:0px;border:0px;">
+                    </a>
 
 
                     <div class="horizontalmenu" style="width:100%;">
@@ -67,7 +68,7 @@
                             <li>
                                 <div class="checkbox checkbox-slider--b-flat">
                                     <label>
-                                            <input type="checkbox" ng-model="showHeroBar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-not-empty" data-toggle="collapse" data-target="#programdashboard">
+                                            <input type="checkbox" ng-model="showHeroBar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-not-empty" data-toggle="collapse" data-target="#programdashboard" checked>
                                             <span>Show Program Dashboard</span>
                                         </label>
                                 </div>
@@ -79,45 +80,45 @@
                             <li class="dropdown export">
                                 <a uib-dropdown-toggle="" role="button" data-toggle="dropdown" id="exportOptions" class="dropdown-toggle" aria-haspopup="true"
                                     aria-expanded="false">
-                                        <i class="fa fa-external-link fa-lg"> </i>
-                                    </a>
+                                    <i class="fa fa-external-link fa-lg"> </i>
+                                </a>
                                 <ul uib-dropdown-menu="" aria-labelledby="exportOptions" class="dropdown-menu">
                                     <li><strong>Export Options</strong>
                                     </li>
                                     <li class="divider" role="separator"></li>
                                     <li role="button">
                                         <a>
-                                                <i class="fa fa-print"></i> Print
-                                            </a>
+                                            <i class="fa fa-print"></i> Print
+                                        </a>
                                     </li>
                                     <li role="button">
                                         <a>
-                                                <i class="fa fa-envelope-o"></i> Email
-                                            </a>
+                                            <i class="fa fa-envelope-o"></i> Email
+                                        </a>
                                     </li>
                                     <li role="button">
                                         <a>
-                                                <i class="fa fa-feed"></i> Subscribe
-                                            </a>
+                                            <i class="fa fa-feed"></i> Subscribe
+                                        </a>
                                     </li>
                                     <li role="button">
                                         <a>
-                                                <i class="fa fa-rss-square"></i> Manage Subscriptions
-                                            </a>
+                                            <i class="fa fa-rss-square"></i> Manage Subscriptions
+                                        </a>
                                     </li>
                                     <li class="divider" role="separator"></li>
                                     <!-- ngIf: exportPermissions.pdf -->
                                     <li role="button" class="ng-scope">
                                         <a href="docs/Program%20Dashboard.pdf" target="_blank">
-                                                <i class="fa fa-file-pdf-o"></i> PDF
-                                            </a>
+                                            <i class="fa fa-file-pdf-o"></i> PDF
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
 
                                 <a uib-dropdown-toggle="" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-filter fa-lg"></i></a>
+                                    <i class="fa fa-filter fa-lg"></i></a>
 
                                 <ul class="dropdown-menu dropdownMinWidth" role="menu">
                                     <div style="margin:0 8px 11px 0;">
@@ -148,11 +149,9 @@
                                                                     <option label="Month to Date" value="MTD">Month to Date</option>
                                                                     <option label="Year to Date" value="YTD">Year to Date</option>
                                                                 </select>
-                                                            <span
-                                                                class="select2 select2-container select2-container--default select2-container--below"
-                                                                dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-paramperiod-jt-container">
+                                                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-paramperiod-jt-container">
                                                                 <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
-                                                                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                            </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -190,8 +189,8 @@
                             </li>
                             <li role="button" ng-hide="hideNotes" class="">
                                 <a data-toggle="modal" data-target="#notes">
-                                        <i class="fa fa-info-circle fa-lg"></i>
-                                    </a>
+                                    <i class="fa fa-info-circle fa-lg"></i>
+                                </a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
@@ -200,7 +199,7 @@
                     <div class="clearfix"></div>
 
                     <!-- Dashboard Content -->
-                    <div class="dashboard collapse" aria-expanded="true" aria-hidden="false" id="programdashboard">
+                    <div class="dashboard collapse in" aria-expanded="true" aria-hidden="false" id="programdashboard">
                         <div class="col-sm-3 bdr-r">
                             <div class="ng-isolate-scope">
                                 <div class="square">
@@ -254,7 +253,7 @@
 
                     <!-- Main Content Starts -->
                     <div class="col-sm-12 main">
-                      <div class="side-nav-handle-init">
+                        <div class="side-nav-handle-init">
                             <div class="side-nav-handle-container" onclick="toggleSideNav()">
                                 <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></div>
                         </div>
@@ -268,13 +267,13 @@
                                         <li><a href="HondaLCC_OnDemand.html">OnDemand</a></li>
                                         <li><a href="HondaLCC_Communication_Summary.html">Communication Summary</a></li>
                                         <li><a href="HondaLCC_Trend_Analysis.html">Trend Analysis</a></li>
-                                        <li><a href="#">Manage Subscriptions</a></li>
+                                        <li><a data-toggle="modal" data-target="#managesubscriptions">Manage Subscriptions</a></li>
                                         <li><a href="#">Channel Reports <span class="glyphicon glyphicon-chevron-right"></span> </a>
                                             <ul>
                                                 <li><a href="#">Billing Summary</a></li>
-                                                <li><a href="#">Customer Opt-outs</a></li>
-                                                <li><a href="#">Email Summary</a></li>
-                                                <li><a href="#">Targeted OLA</a></li>
+                                                <li><a href="HondaLCC_Customer_Opt_Out.html">Customer Opt-outs</a></li>
+                                                <li><a href="HondaLCC_Email_Summary.html">Email Summary</a></li>
+                                                <li><a href="HondaLCC_Targeted_OLA.html">Targeted OLA</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -292,52 +291,52 @@
                                 <div class="filters row">
                                     <ul class="nav navbar-nav">
                                         <li title="Expand All" class="">
-                                            <a role="button" class="btn btn-sm btn-primary "><i class="fa fa-plus-square-o fa-lg"></i></a>
+                                            <a role="button" class="btn btn-sm btn-primary "><i class="fa fa-plus-square-o fa-lg" onclick="javascript:Expand('winbackLess');Expand('winbacktableView');"></i></a>
                                         </li>
                                         <li title="Collapse All" class="">
-                                            <a role="button" class="btn btn-sm btn-primary hide-on-print-table-view"><i class="fa  fa-minus-square-o fa-lg"></i></a>
+                                            <a role="button" class="btn btn-sm btn-primary hide-on-print-table-view"><i class="fa  fa-minus-square-o fa-lg" onclick="javascript:Collapse('winbackLess');Collapse('winbacktableView');"></i></a>
                                         </li>
                                         <li class="dropdown export ng-isolate-scope">
                                             <a role="button" data-toggle="dropdown" id="contentexportOptions" class="dropdown-toggle" aria-haspopup="true" aria-expanded="true">
-                                                    <i class="fa fa-external-link fa-lg"> </i>
-                                                </a>
+                                                <i class="fa fa-external-link fa-lg"> </i>
+                                            </a>
                                             <ul aria-labelledby="contentexportOptions" class="dropdown-menu">
                                                 <li><strong>Export Options</strong>
                                                 </li>
                                                 <li class="divider" role="separator"></li>
                                                 <li role="button">
                                                     <a>
-                                                            <i class="fa fa-print"></i> Print
-                                                        </a>
+                                                        <i class="fa fa-print"></i> Print
+                                                    </a>
                                                 </li>
                                                 <li role="button">
                                                     <a>
-                                                            <i class="fa fa-envelope-o"></i> Email
-                                                        </a>
+                                                        <i class="fa fa-envelope-o"></i> Email
+                                                    </a>
                                                 </li>
                                                 <li role="button">
                                                     <a>
-                                                            <i class="fa fa-feed"></i> Subscribe
-                                                        </a>
+                                                        <i class="fa fa-feed"></i> Subscribe
+                                                    </a>
                                                 </li>
                                                 <li role="button">
                                                     <a>
-                                                            <i class="fa fa-rss-square"></i> Manage Subscriptions
-                                                        </a>
+                                                        <i class="fa fa-rss-square"></i> Manage Subscriptions
+                                                    </a>
                                                 </li>
                                                 <li class="divider" role="separator"></li>
                                                 <li role="button" class="ng-scope">
                                                     <a href="docs/Welcome%20Phase.pdf" target="_blank">
-                                                            <i class="fa fa-file-pdf-o"></i> PDF
-                                                        </a>
+                                                        <i class="fa fa-file-pdf-o"></i> PDF
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="dropdown ng-isolate-scope">
 
                                             <a uib-dropdown-toggle="" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fa fa-filter fa-lg"></i>
-                                                </a>
+                                                <i class="fa fa-filter fa-lg"></i>
+                                            </a>
                                             <ul class="dropdown-menu dropdownMinWidth" role="menu">
                                                 <div style="margin:0 8px 11px 0;">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="searchFilterDropdown.opened = false">
@@ -610,8 +609,8 @@
                                         </li>
                                         <li role="button" ng-click="openInfoModal('edw')" ng-hide="hideNotes" class="">
                                             <a data-toggle="modal" data-target="#contentnotes">
-                                                    <i class="fa fa-info-circle fa-lg"></i>
-                                                </a>
+                                                <i class="fa fa-info-circle fa-lg"></i>
+                                            </a>
                                         </li>
                                         <!--<li>
                                                 <a role="button" ng-click="openTableView()" class="btn btn-sm btn-primary">Table</a>
@@ -641,12 +640,12 @@
                             <div class="box-grid">
                                 <div class="fleft">
                                     <h4 class="ng-binding clr-cyan">OnDemand
-                                        <a role="button" class="ng-binding ng-scope">Less Detail</a>
+                                        <a id="lessDetailLink" role="button" class="ng-binding ng-scope" onclick="detailsToggelr(this)">Less Detail</a>
                                     </h4>
                                 </div>
                                 <div class="clearfix"></div>
 
-                                <div uib-collapse="isBoxRowCollapsed" class="in collapse" aria-expanded="true" aria-hidden="false">
+                                <div uib-collapse="isBoxRowCollapsed" class="in collapse" aria-expanded="true" aria-hidden="false" id="winbackLess">
                                     <div class="box-row">
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
@@ -769,12 +768,16 @@
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
-                                        <div class="more ng-scope">
-                                            <a class="btn btn-primary" role="button" ng-click="showHide_ServiceSumDetailsTable()">
-                                                    <i ng-class="{'fa fa-plus' : isServiceSumTableCollapsed, 'fa fa-minus': !isServiceSumTableCollapsed}" class="fa fa-plus"></i>
-                                                </a>
+                                        <div class="moresymbol">
+                                            <a class="btn btn-primary" role="button" onclick="javascript:toggler('winbacktableView');">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
                                         </div>
                                         <div class="clearfix"></div>
+                                    </div>
+                                    <!-- in collapse -->
+                                    <div id="winbacktableView" style="display: none;">
+                                        This is sample contnt
                                     </div>
                                 </div>
                                 <!-- in collapse -->
@@ -896,6 +899,30 @@
     </div>
     <!-- Top Modal pop up ends -->
 
+	<!-- Manage Subscriptions Pop up Starts -->
+    <div class="modal fade ng-scope ng-isolate-scope in" role="dialog" size="lg" index="0" animate="animate" id="managesubscriptions">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                    <h4 class="modal-title ng-binding">Subscribe</h4>
+                </div>
+                <div class="modal-body ng-scope" id="modal-body">
+                    <div class="max-height">
+                        <div class="table-responsive notes">
+                            <div>
+                                <h5>No subscriptions are present.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage Subscriptions Pop Up Ends -->
+
     <!-- Content Modal pop up starts -->
     <div class="modal fade ng-scope ng-isolate-scope in" role="dialog" size="lg" index="0" animate="animate" id="contentnotes">
         <div class="modal-dialog modal-lg">
@@ -973,27 +1000,59 @@
 <div id="aspenOverlay" class=""></div>
 
 <script type="text/javascript">
-    $(document).ready(function () {
-        $("#aspercentage, #ascount").change(function () {
-            $("#percentagegraph, #countgraph").toggle();
-        });
+                        $(document).ready(function () {
+                            $("#aspercentage, #ascount").change(function () {
+                                $("#percentagegraph, #countgraph").toggle();
+                            });
 
-        $("#aspercentage2, #ascount2").change(function () {
-            $("#percentagegraph2, #countgraph2").toggle();
-        });
-    });
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        /*SideNav specific code*/
-        // hide the side-nav initially when the page loadds
-        $('.side-nav').hide();
-    });
+                            $("#aspercentage2, #ascount2").change(function () {
+                                $("#percentagegraph2, #countgraph2").toggle();
+                            });
+                        });
+                        $(document).ready(function () {
+                            $('[data-toggle="tooltip"]').tooltip();
+                            /*SideNav specific code*/
+                            // hide the side-nav initially when the page loadds
+                            $('.side-nav').hide();
+                        });
 
-    function toggleSideNav(params) {
-        /*Hide/Unhide the handle init and the sidenav*/
-        $('.side-nav-handle-init').toggle();
-        $('.side-nav').slideToggle();
-    }
+                        function toggleSideNav(params) {
+                            /*Hide/Unhide the handle init and the sidenav*/
+                            $('.side-nav-handle-init').toggle();
+                            $('.side-nav').slideToggle();
+                        }
+
+                        function toggler(divId) {
+                            $("#" + divId).toggle();
+                            $('.moresymbol .fa').toggleClass('fa-minus');
+                        }
+
+                        function Expand(divId) {
+                            $("#" + divId).show();
+                            $('.moresymbol .fa').addClass('fa fa-minus');
+                            $('#lessDetailLink').text('Less Detail');
+                        }
+
+                        function Collapse(divId) {
+                            $("#" + divId).hide();
+                            $('.moresymbol .fa').addClass('fa fa-plus');
+                            $('#lessDetailLink').text('More Detail');
+                        }
+
+                        function detailsToggelr(obj) {
+                            var control = obj;
+                            if (obj.text == 'Less Detail') {
+                                $('#winbackLess').hide();
+                                $('#lessDetailLink').text('More Detail');
+
+                            }
+                            else {
+                                $('#winbackLess').show();
+                                $('.moresymbol .fa').addClass('fa fa-plus');
+                                $('#lessDetailLink').text('Less Detail');
+                            }
+                        }
+
 </script>
 
 </html>

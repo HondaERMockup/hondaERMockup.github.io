@@ -3668,7 +3668,7 @@ input[type="checkbox"], input[type="radio"] {
 
 /* CL_CampaignLibrary.ascx */
 
-<style type="text/css" > #TE_ImageTemplate {
+#TE_ImageTemplate {
     height: 220px;
     width: 220px;
     padding: 10px;
@@ -4164,7 +4164,7 @@ div#EnrolledProgramsTitle h1{
     height: 27px;
     text-align: center;
     background: -moz-linear-gradient(center top, #CDDFF4, #98B6D8) repeat scroll 0 0 transparent;
-    background: -webkit-gradient(linear, left top, left bottom, from(#CDDFF4), to(#98B6D8));
+    
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cddff4', endColorstr='#98b6d8');
 }
 
@@ -4175,7 +4175,7 @@ div#EnrolledProgramsTitle h1{
     z-index: 10000;
     background: #c3dbf1; /* Old browsers */
     background: -moz-linear-gradient(top, #6daedc 12%, #c3dbf1 84%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#6daedc), color-stop(84%,#c3dbf1)); /* Chrome,Safari4+ */
+   
     background: -webkit-linear-gradient(top, #6daedc 12%,#c3dbf1 84%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(top, #6daedc 12%,#c3dbf1 84%); /* Opera11.10+ */
     background: -ms-linear-gradient(top, #6daedc 12%,#c3dbf1 84%); /* IE10+ */
@@ -4206,18 +4206,9 @@ div#EnrolledProgramsTitle h1{
 
 /*#Global#*/
 .LTR, .RTL {
-    MoreButtonPanelDisplay;
     background-color: #ffffff;
 }
 
-body {
-    background-color: #ffffff !important;    
-    background-size: 100%;
-    font-size: small;
-    font-family: Arial;
-    margin: 0px;
-    /*background: url(/cm/images/darkBlueBG.png) repeat-x top center;*/
-}
 
 h1 {
     color: #0F4168;
@@ -4466,8 +4457,7 @@ margin-left:50px;
 }
 
 .largeLeftContent {
-    width: 225px;
-    !important;
+    width: 225px !important;
 }
 
 .zoneContent {
@@ -8042,8 +8032,7 @@ padding-left:29px;
     background: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
     background: rgba(0, 0, 0, 0.6);
-    /* For IE 5.5 - 7*/
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
@@ -8445,7 +8434,7 @@ div.gridbox_dhx_skyblue table.hdr td div.hdrcell{
 	width:auto;
 }
 html > body /**/ div.gridbox_dhx_skyblue table.hdr td div.hdrcell{
-	width=100%;
+	width:100%;
 }
 div.gridbox_dhx_skyblue table.hdr td {
 	border-width: 1px 1px 1px 1px;
@@ -8888,3 +8877,83 @@ label {
 }
 
 /*Side Nav related css - end*/
+
+.trend-analysis h4 {
+    font-size: 18px;
+    color: #000;
+}
+
+/* Pagination CSS */
+
+.edw-container .pagination-additional-class {
+    position: absolute;
+    z-index: 0;
+    top: inherit;
+    margin-top: 20px;
+}
+.simple-pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.simple-pagination li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.light-theme a, .light-theme span {
+    float: left;
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #BBB;
+    min-width: 14px;
+    padding: 0 7px;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    background: #efefef;
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    background: linear-gradient(top, #ffffff 0%,#efefef 100%);
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.light-theme .current {
+    background: #666;
+    color: #FFF;
+    border-color: #444;
+    box-shadow: 0 1px 0 rgba(255,255,255,1), 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    cursor: default;
+}
+
+.email-summary-content h4{
+    font-size: 26px;
+    color: #333;
+    font-family: "Calibri";
+    font-weight: bold;
+}
+
+.email-summary-content .report-generated {
+    color: #000;
+    font-size: 18px;
+    font-family: "Calibri";
+    font-weight: bold;
+}
+
+.email-summary-content .small-txt {
+    font-size: 14px;
+    color: #000;
+    font-family: "Calibri";
+}
+
+.emailsummary-graph {
+    overflow-x: auto;
+}
