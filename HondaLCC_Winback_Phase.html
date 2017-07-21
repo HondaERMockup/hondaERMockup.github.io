@@ -5,7 +5,7 @@
 <head id="head">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
-        Honda LCC - Dashboard - Welcome Phase
+        Honda LCC - Dashboard - Winback Phase
     </title>
     <meta http-equiv="x-ua-compatible" content="IE=9">
     <link rel="shortcut icon" href="https://qatest.honda.epsilonrms.com/Hondafavicon.ico" type="image/x-icon">
@@ -286,7 +286,6 @@
                             </div>
 
                         </div>
-
                         <div class="col-sm-12 side-fit edw-container">
                             <!-- Filter content starts-->
                             <div class="col-sm-12">
@@ -626,7 +625,7 @@
                         <!-- Graph contnet stars -->
                         <div class="graph-content col-sm-12">
                             <div>
-                                <h3 class="header ng-binding">Welcome Phase</h3>
+                                <h3 class="header ng-binding">Winback Phase</h3>
                             </div>
 
                             <div>
@@ -639,7 +638,7 @@
                                                 <input class="option-input radio ng-pristine ng-untouched ng-valid ng-not-empty" type="radio" name="radio_chartOptions1" value="2" id='ascount'>&nbsp;&nbsp;As per Count
                                             </label>
 
-                                        <div class="title h4" style="text-align: center; color: rgb(136, 136, 136);">Customers in the New Segment With a Valid Email Address</div>
+                                        <div class="title h4" style="text-align: center; color: rgb(136, 136, 136);">Unique Lapsed/Inactive Customers Contacted Who Returned For Service</div>
 
                                         <div id="percentagegraph">
                                             <img src="images/welcome_phase_graph1.png" alt='welcome phase graph' class="graph">
@@ -652,9 +651,20 @@
                                 </div>
 
                                 <div class="col-sm-6 p-r-0">
-                                    <div class="col-sm-12 graph-container" style="padding-top: 32px;">
-                                        <div class="title h4" style="text-align: center; color: rgb(136, 136, 136);"># of How Invitations Sent By Month</div>
-                                        <img src="images/welcome_phase_graph3.png" alt="welcome phase grap" class="graph">
+                                    <div class="col-sm-12 graph-container">
+                                        <label ng-repeat="option in chartOptions1.radioFilters.options track by $index" style="margin-right:10px;z-index:0;" class="radio-inline ng-binding ng-scope">
+                                                <input class="option-input radio ng-pristine ng-untouched ng-valid ng-not-empty" type="radio" name="radio_engageOptions1" value="1" checked="checked" id='aspercentage2'>&nbsp;&nbsp;As a %
+                                            </label>
+                                        <label ng-repeat="option in chartOptions1.radioFilters.options track by $index" style="margin-right:10px;z-index:0;" class="radio-inline ng-binding ng-scope">
+                                                <input class="option-input radio ng-pristine ng-untouched ng-valid ng-not-empty" type="radio" name="radio_engageOptions1" value="2" id='ascount2'>&nbsp;&nbsp;As per Count
+                                            </label>
+                                        <div class="title h4" style="text-align: center; color: rgb(136, 136, 136);">RO Frequency and Aging</div>
+                                        <div id="percentagegraph2">
+                                            <img src="images/engage_phase_graph.png" alt='welcome phase graph' class="graph">
+                                        </div>
+                                        <div id="countgraph2">
+                                            <img src="images/welcome_phase_graph2.png" alt='welcome phase graph' class="graph2">
+                                        </div>
                                     </div>
                                 </div>
 
@@ -672,19 +682,10 @@
                                         <div class="radio">
                                             <img width="20" height="20" src="images/green.png">
                                         </div>
-                                        <a target="_blank" class="btn btn-default ng-binding" href="https://www.hondalcc.com/app/events">SCHEDULE HOW EVENT</a>
+                                        <a target="_blank" class="btn btn-default ng-binding" href="https://www.hondalcc.com/app/seasonal">ENROLL IN SEASONAL COMMUNICATIONS</a>
                                     </form>
-                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you have no future How Event scheduled either as a stand-alone event or as part of the How Wednesday program."
+                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you are not enrolled in Honda Seasonal Communications."
                                         href="#"><i class="fa  fa-question-circle"></i></a>
-                                </div>
-                                <div class="col-sm-5 ng-scope red-btn">
-                                    <form class="form-inline ng-pristine ng-valid">
-                                        <div class="radio">
-                                            <img width="20" height="20" src="images/red.png">
-                                        </div>
-
-                                    </form>
-                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you did not add bulk mailers to your last HOW Campaign."><i class="fa  fa-question-circle"></i></a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -696,7 +697,7 @@
 
                             <div class="box-grid">
                                 <div class="fleft">
-                                    <h4 class="ng-binding clr-cyan">Welcome
+                                    <h4 class="ng-binding clr-cyan">Winback
                                         <a role="button" class="ng-binding ng-scope">Less Detail</a>
                                     </h4>
                                 </div>
@@ -706,7 +707,7 @@
                                     <div class="box-row">
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="5,955" class="ng-binding">5,955
+                                                <p title="25.1k" class="ng-binding">25.1k
                                                     <br><small ng-bind="boxData.name" class="ng-binding">Customers Contacted</small>
                                                 </p>
                                             </div>
@@ -719,7 +720,7 @@
 
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
+                                                <p title="$137.7k" class="ng-binding">$137.7k
                                                     <br><small ng-bind="boxData.name" class="ng-binding">CP Revenue</small>
                                                 </p>
                                             </div>
@@ -731,7 +732,7 @@
                                         </div>
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
+                                                <p title="$74.53k" class="ng-binding">$74.53k
                                                     <br><small ng-bind="boxData.name" class="ng-binding">WP Revenue</small>
                                                 </p>
                                             </div>
@@ -743,7 +744,7 @@
                                         </div>
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
+                                                <p title="$212.2k" class="ng-binding">$212.2k
                                                     <br><small ng-bind="boxData.name" class="ng-binding">Total RO Revenue</small>
                                                 </p>
                                             </div>
@@ -755,7 +756,7 @@
                                         </div>
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="0" class="ng-binding">0
+                                                <p title="848" class="ng-binding">848
                                                     <br><small ng-bind="boxData.name" class="ng-binding">Response Count</small>
                                                 </p>
                                             </div>
@@ -767,7 +768,7 @@
                                         </div>
                                         <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
                                             <div ng-class="boxData.boxClass" class="box-blue">
-                                                <p title="N/A" class="ng-binding">0.00%
+                                                <p title="3.27%" class="ng-binding">3.27%
                                                     <br><small ng-bind="boxData.name" class="ng-binding">Response Rate</small>
                                                 </p>
                                             </div>
@@ -781,10 +782,10 @@
                                             <small class="title ng-binding" ng-bind="header">Total Communications Sent</small>
                                             <div class="data-value ng-scope" ng-repeat="obj in tableData">
                                                 <small title="Customers Contacted: 0"> 
-                                                        <a class="ng-scope">
+                                                        <a  class="ng-scope">
                                                            <i  ng-class="obj.faIcon" class="ng-scope fa fa-group fs17"></i><!-- end ngIf: obj.faIcon -->
 
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">5,955</span>
+                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">25.1k</span>
                                                         </a>               
                                                     </small>
                                             </div>
@@ -793,7 +794,7 @@
                                                 <small title="Surface: 0"> 
                                                        <a  class="ng-scope">
                                                            <i  ng-class="obj.faIcon" class="ng-scope fa fa-paper-plane-o fs18"></i><!-- end ngIf: obj.faIcon -->
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">5,862</span>
+                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">0</span>
                                                         </a>                       
                                                     </small>
                                             </div>
@@ -803,7 +804,7 @@
                                                        <a  class="ng-scope">
                                                            <i  ng-class="obj.faIcon" class="ng-scope fa fa-envelope-o fs18"></i><!-- end ngIf: obj.faIcon -->
 
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">6,066</span>
+                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">47.5k</span>
                                                         </a>                         
                                                     </small>
                                             </div>
@@ -819,7 +820,7 @@
                                                 <small title="Total Sent: 0"> 
                                                        <a  class="ng-scope">
                                                            <i  ng-class="obj.faIcon" class="ng-scope fa fa-group fs17"></i><!-- end ngIf: obj.faIcon -->
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">11.9k</span>
+                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">47.5k</span>
                                                         </a>              
                                                     </small>
                                             </div>
@@ -1032,6 +1033,10 @@
     $(document).ready(function () {
         $("#aspercentage, #ascount").change(function () {
             $("#percentagegraph, #countgraph").toggle();
+        });
+
+        $("#aspercentage2, #ascount2").change(function () {
+            $("#percentagegraph2, #countgraph2").toggle();
         });
     });
     $(document).ready(function () {

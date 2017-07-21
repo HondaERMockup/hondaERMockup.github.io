@@ -5,7 +5,7 @@
 <head id="head">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>
-        Honda LCC - Dashboard - Welcome Phase
+        Honda LCC - Dashboard - Trend Analysis
     </title>
     <meta http-equiv="x-ua-compatible" content="IE=9">
     <link rel="shortcut icon" href="https://qatest.honda.epsilonrms.com/Hondafavicon.ico" type="image/x-icon">
@@ -148,11 +148,9 @@
                                                                     <option label="Month to Date" value="MTD">Month to Date</option>
                                                                     <option label="Year to Date" value="YTD">Year to Date</option>
                                                                 </select>
-                                                            <span
-                                                                class="select2 select2-container select2-container--default select2-container--below"
-                                                                dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-paramperiod-jt-container">
+                                                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-paramperiod-jt-container">
                                                                 <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
-                                                                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                            </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -626,10 +624,11 @@
                         <!-- Graph contnet stars -->
                         <div class="graph-content col-sm-12">
                             <div>
-                                <h3 class="header ng-binding">Welcome Phase</h3>
+                                <h3 class="header ng-binding">Trend Analysis</h3>
                             </div>
 
                             <div>
+                                <h4><strong class="ng-binding">Welcome Phase</strong></h4>
                                 <div class="col-sm-6 p-l-0">
                                     <div class="col-sm-12 graph-container">
                                         <label ng-repeat="option in chartOptions1.radioFilters.options track by $index" style="margin-right:10px;z-index:0;" class="radio-inline ng-binding ng-scope">
@@ -663,183 +662,6 @@
                             <div class="clearfix"></div>
                         </div>
                         <!-- Graph content ends -->
-
-                        <!-- btn-content starts -->
-                        <div class="btn-content">
-                            <div class="col-sm-12 side-fit">
-                                <div class="col-sm-5 ng-scope">
-                                    <form class="form-inline ng-pristine ng-valid">
-                                        <div class="radio">
-                                            <img width="20" height="20" src="images/green.png">
-                                        </div>
-                                        <a target="_blank" class="btn btn-default ng-binding" href="https://www.hondalcc.com/app/events">SCHEDULE HOW EVENT</a>
-                                    </form>
-                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you have no future How Event scheduled either as a stand-alone event or as part of the How Wednesday program."
-                                        href="#"><i class="fa  fa-question-circle"></i></a>
-                                </div>
-                                <div class="col-sm-5 ng-scope red-btn">
-                                    <form class="form-inline ng-pristine ng-valid">
-                                        <div class="radio">
-                                            <img width="20" height="20" src="images/red.png">
-                                        </div>
-
-                                    </form>
-                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you did not add bulk mailers to your last HOW Campaign."><i class="fa  fa-question-circle"></i></a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <!-- btn-content ends -->
-
-                        <!-- Table contents start -->
-                        <div class="table-content col-sm-12">
-
-                            <div class="box-grid">
-                                <div class="fleft">
-                                    <h4 class="ng-binding clr-cyan">Welcome
-                                        <a role="button" class="ng-binding ng-scope">Less Detail</a>
-                                    </h4>
-                                </div>
-                                <div class="clearfix"></div>
-
-                                <div uib-collapse="isBoxRowCollapsed" class="in collapse" aria-expanded="true" aria-hidden="false">
-                                    <div class="box-row">
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="5,955" class="ng-binding">5,955
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">Customers Contacted</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope status-normal" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;clr-lightGray\&quot;>
-                                            <span class=\&quot;glyphicon glyphicon-stop\&quot;></span>
-                                            <strong>0 (0%)</strong></div>
-                                            Current: <strong>0</strong><br/>Previous: <strong>0</strong>&quot;"></div>
-                                        </div>
-
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">CP Revenue</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;\&quot;>
-                                            <span class=\&quot;\&quot;></span>
-                                            <strong>N/A (N/A%)</strong></div>
-                                            Current: <strong>N/A</strong><br/>Previous: <strong>N/A</strong>&quot;"></div>
-                                        </div>
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">WP Revenue</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;\&quot;>
-                                            <span class=\&quot;\&quot;></span>
-                                            <strong>N/A (N/A%)</strong></div>
-                                            Current: <strong>N/A</strong><br/>Previous: <strong>N/A</strong>&quot;"></div>
-                                        </div>
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="$0.00" class="ng-binding">$0.00
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">Total RO Revenue</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;\&quot;>
-                                            <span class=\&quot;\&quot;></span>
-                                            <strong>N/A (N/A%)</strong></div>
-                                            Current: <strong>N/A</strong><br/>Previous: <strong>N/A</strong>&quot;"></div>
-                                        </div>
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-grey">
-                                                <p title="0" class="ng-binding">0
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">Response Count</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;\&quot;>
-                                            <span class=\&quot;\&quot;></span>
-                                            <strong>N/A (N/A%)</strong></div>
-                                            Current: <strong>N/A</strong><br/>Previous: <strong>N/A</strong>&quot;"></div>
-                                        </div>
-                                        <div class="box ng-scope ng-isolate-scope" box-data="boxData" ng-repeat="boxData in rowData.cols">
-                                            <div ng-class="boxData.boxClass" class="box-blue">
-                                                <p title="N/A" class="ng-binding">0.00%
-                                                    <br><small ng-bind="boxData.name" class="ng-binding">Response Rate</small>
-                                                </p>
-                                            </div>
-                                            <div class="status trend-tooltip ng-scope" ng-class="boxData.indicatorOnBox" tooltip-placement="top" tooltip-is-open="false"
-                                                uib-tooltip-html="&quot;<div class=\&quot;\&quot;>
-                                            <span class=\&quot;\&quot;></span>
-                                            <strong>N/A (N/A%)</strong></div>
-                                            Current: <strong>N/A</strong><br/>Previous: <strong>N/A</strong>&quot;"></div>
-                                        </div>
-                                        <div class="box-last ng-scope clr-cyan" ng-class="{'clr-cyan':clrCyan,'box-table':boxTableCss}">
-                                            <small class="title ng-binding" ng-bind="header">Total Communications Sent</small>
-                                            <div class="data-value ng-scope" ng-repeat="obj in tableData">
-                                                <small title="Customers Contacted: 0"> 
-                                                        <a class="ng-scope">
-                                                           <i  ng-class="obj.faIcon" class="ng-scope fa fa-group fs17"></i><!-- end ngIf: obj.faIcon -->
-
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">5,955</span>
-                                                        </a>               
-                                                    </small>
-                                            </div>
-
-                                            <div class="data-value ng-scope" ng-repeat="obj in tableData">
-                                                <small title="Surface: 0"> 
-                                                       <a  class="ng-scope">
-                                                           <i  ng-class="obj.faIcon" class="ng-scope fa fa-paper-plane-o fs18"></i><!-- end ngIf: obj.faIcon -->
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">5,862</span>
-                                                        </a>                       
-                                                    </small>
-                                            </div>
-
-                                            <div class="data-value ng-scope" ng-repeat="obj in tableData">
-                                                <small title="Email: 0"> 
-                                                       <a  class="ng-scope">
-                                                           <i  ng-class="obj.faIcon" class="ng-scope fa fa-envelope-o fs18"></i><!-- end ngIf: obj.faIcon -->
-
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">6,066</span>
-                                                        </a>                         
-                                                    </small>
-                                            </div>
-                                            <div class="data-value ng-scope" ng-repeat="obj in tableData">
-                                                <small title="Live Call: 0"> 
-                                                       <a  class="ng-scope">
-                                                           <i  ng-class="obj.faIcon" class="ng-scope fa fa-user-o fs18"></i><!-- end ngIf: obj.faIcon -->
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">0</span>
-                                                        </a>                      
-                                                    </small>
-                                            </div>
-                                            <div class="data-value ng-scope" ng-repeat="obj in tableData">
-                                                <small title="Total Sent: 0"> 
-                                                       <a  class="ng-scope">
-                                                           <i  ng-class="obj.faIcon" class="ng-scope fa fa-group fs17"></i><!-- end ngIf: obj.faIcon -->
-                                                           <span class="font-light ng-binding" ng-bind="obj.formattedValue">11.9k</span>
-                                                        </a>              
-                                                    </small>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="more ng-scope">
-                                            <a class="btn btn-primary" role="button" ng-click="showHide_ServiceSumDetailsTable()">
-                                                    <i ng-class="{'fa fa-plus' : isServiceSumTableCollapsed, 'fa fa-minus': !isServiceSumTableCollapsed}" class="fa fa-plus"></i>
-                                                </a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <!-- in collapse -->
-                            </div>
-                            <!-- Box-grid -->
-                        </div>
-                        <!-- Table content ends -->
-
-
 
                     </div>
                     <!-- Main Contents Ends -->
@@ -1039,13 +861,14 @@
         /*SideNav specific code*/
         // hide the side-nav initially when the page loadds
         $('.side-nav').hide();
-    });
 
-    function toggleSideNav(params) {
-        /*Hide/Unhide the handle init and the sidenav*/
-        $('.side-nav-handle-init').toggle();
-        $('.side-nav').slideToggle();
-    }
+
+        function toggleSideNav(params) {
+            /*Hide/Unhide the handle init and the sidenav*/
+            $('.side-nav-handle-init').toggle();
+            $('.side-nav').slideToggle();
+        }
+    });
 </script>
 
 </html>
