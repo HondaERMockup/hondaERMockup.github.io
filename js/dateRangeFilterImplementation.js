@@ -54,6 +54,7 @@ $(document).ready(function () {
     $('#paramperiod').change(function (e) {
         var selectedText = $('#paramperiod option:selected').text();
         var selectedVal = $(this).val();
+        dateRangeText = selectedText;
         if (selectedText.toLowerCase() === 'custom') {
             $('#paramstart_date1').removeAttr('disabled');
         } else {
@@ -70,6 +71,7 @@ $(document).ready(function () {
     $('#paramperiod0').change(function (e) {
         var selectedText = $('#paramperiod0 option:selected').text();
         var selectedVal = $(this).val();
+        dateRangeText = selectedText;
         if (selectedText.toLowerCase() === 'custom') {
             $('#paramstart_date0').removeAttr('disabled');
         } else {
@@ -108,6 +110,7 @@ $(document).ready(function () {
                     var parentId = $(this).attr('id')
                     var cascadeTargetId = $(this).attr('cascadeTargetId')
                     AddDateCascadingFunctionality(cascadeTargetId, parentId);
+                    updateDateValues(parentId, cascadeTargetId);
                 });
 
             } else {
@@ -132,6 +135,11 @@ $(document).ready(function () {
         });
     }
 
+    /**updateDateValues */
+    function updateDateValues(startDateInputId, endDateInputId) {
+        startDate = $('#' + startDateInputId).text();
+        endDate = $('#' + endDateInputId).text();
+    }
 
     /** Moving swith for date range into a function */
     function setDateRange(selectedVal) {

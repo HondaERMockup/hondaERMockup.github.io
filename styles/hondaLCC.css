@@ -8855,6 +8855,33 @@ label {
   cursor: pointer;
 }
 
+.side-nav .glyphicon-triangle-bottom {
+    float: right;
+}
+
+.side-nav li:hover {
+    background: #63a6d8;
+}
+
+.side-nav .sub-menu a:hover {
+    color: #fff;
+}
+
+.side-nav .sub-menu a {
+    color: #333;
+}
+
+.side-nav .sub-menu li  {
+    background: #c4e0fb;
+    color: #fff;
+}
+
+.side-nav .sub-menu li:hover {
+    background: #4385c4;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*main view div*/
 
 .view {
@@ -8978,3 +9005,4 @@ label {
       /*left: -45px !important;
       top: -30px !important;*/
   }
+
