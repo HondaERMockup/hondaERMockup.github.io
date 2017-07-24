@@ -8720,7 +8720,7 @@ label {
 
 .square-red {
     background-size: 100% 100%;
-    background: url("../images/red-square.png") no-repeat center center / 100% auto;
+    background: url("../images/blue-square.png") no-repeat center center / 100% auto;
 }
 .square-small {
     padding: 5px;
@@ -8957,3 +8957,24 @@ label {
 .emailsummary-graph {
     overflow-x: auto;
 }
+
+.ml-5.grid-tooltip-content + .tooltip > .tooltip-inner {
+      background-color: #fff; 
+      color: #000; 
+      border: 1px solid #4b8abf; 
+      padding: 10px 60px 10px 0px;
+      font-weight: bold;
+      z-index: -99;
+  }
+
+  .grid-tooltip .tooltip.fade {
+    left: 60px !important;
+    top: -58px !important;
+    width: 160px;
+  }
+
+  .grid-tooltip .tooltip.top .tooltip-arrow {
+      border-top-color: #4b8abf;
+      /*left: -45px !important;
+      top: -30px !important;*/
+  }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="styles/theme-honda.css" rel="stylesheet" type="text/css">
     <link href="styles/hondaLCC.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/bootstrap-datepicker3.min.css">
 
     <!--Master Header END -->
     <script src="./js/jquery-3.1.1.min.js"></script>
@@ -24,6 +25,8 @@
     <script src="./js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/g/momentjs@2.18.1(moment.min.js+locales.min.js+moment-with-locales.min.js+locales.js+moment-with-locales.js)"></script>
     <script src="./js/dateRangeFilterImplementation.js"></script>
+    <script src="./js/collapseExpand.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
 </head>
 
 <body class="LTR Safari Chrome Safari59 Chrome59 ENUS ContentBody" cz-shortcut-listen="true">
@@ -37,7 +40,7 @@
 
 
                     <!-- AspenSelectDealerLine.ascx END -->
-                    <a href="HondaLCC_home.html"><img id="p_lt_zoneTop_EditableImage_imgImage" class="HondaAspenLogo" src="./images/Honda-Logo-Blue.png" alt="" style="border-width:0px;border:0px;">
+                    <a href="index.html"><img id="p_lt_zoneTop_EditableImage_imgImage" class="HondaAspenLogo" src="./images/Honda-Logo-Blue.png" alt="" style="border-width:0px;border:0px;">
                         </a>
 
 
@@ -69,7 +72,7 @@
                             <li>
                                 <div class="checkbox checkbox-slider--b-flat">
                                     <label>
-                                            <input type="checkbox" ng-model="showHeroBar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-not-empty" data-toggle="collapse" checked data-target="#programdashboard">
+                                            <input type="checkbox" ng-model="showHeroBar" class="ng-valid ng-dirty ng-valid-parse ng-touched ng-not-empty" data-toggle="collapse" checked data-target="#programdashboard" onclick="javascript:toggleDashboardButtons()">
                                             <span>Show Program Dashboard</span>
                                         </label>
                                 </div>
@@ -78,7 +81,7 @@
                                     <li> <a role="button" href="#"><i class="fa fa-external-link fa-lg"> </i></a></li>
                                     <li class="dropdown"> <a role="button" data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-filter fa-lg"></i></a></li>
                                     -->
-                            <li class="dropdown export">
+                            <li class="dropdown export" id="exportlink">
                                 <a uib-dropdown-toggle="" role="button" data-toggle="dropdown" id="exportOptions" class="dropdown-toggle" aria-haspopup="true"
                                     aria-expanded="false">
                                         <i class="fa fa-external-link fa-lg"> </i>
@@ -116,7 +119,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown" id="filterLink">
 
                                 <a uib-dropdown-toggle="" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa fa-filter fa-lg"></i></a>
@@ -135,7 +138,7 @@
                                                         <div class="ng-scope validation">
                                                             <label style="display: inline-block" class="ng-binding ng-scope">Date Range</label>
 
-                                                            <select class="form-control ng-untouched ng-valid ng-scope ng-not-empty select2-hidden-accessible ng-dirty" tabindex="-1"
+                                                            <select id="paramperiod0" class="form-control ng-untouched ng-valid ng-scope ng-not-empty select2-hidden-accessible ng-dirty" tabindex="-1"
                                                                 aria-hidden="true">
                                                                     <option label="Custom" value="U" selected="selected">Custom</option>
                                                                     <option label="Last Month" value="LM">Last Month</option>
@@ -171,7 +174,7 @@
                                                     <div class="ng-scope">
                                                         <div class="ng-scope validation">
                                                             <label title="" data-toggle="tooltip" ng-model="d.label" data-placement="auto" tooltip="d" class="ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty">End Date</label>
-                                                            <input class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty ng-valid-date" rid="paramend_date0"
+                                                            <input class="form-control ng-pristine ng-untouched ng-valid ng-scope ng-isolate-scope ng-not-empty ng-valid-date" id="paramend_date0"
                                                                 type="text" disabled="disabled">
                                                             <div uib-datepicker-popup-wrap="" ng-model="date" ng-change="dateSelection(date)" template-url="uib/template/datepickerPopup/popup.html"
                                                                 class="ng-pristine ng-untouched ng-valid ng-scope ng-not-empty">
@@ -190,7 +193,7 @@
                                 </ul>
 
                             </li>
-                            <li role="button" ng-hide="hideNotes" class="">
+                            <li role="button" ng-hide="hideNotes" class="" id="notesLink">
                                 <a data-toggle="modal" data-target="#notes">
                                         <i class="fa fa-info-circle fa-lg"></i>
                                     </a>
@@ -231,8 +234,7 @@
                                         </p>
                                     </div>
                                     <div class="pull-left square-label">
-                                        <p class="text-center ng-binding">Over last
-                                            <br> 90 days</p>
+                                        <p class="text-center ng-binding"><span id="dateRangeTextTop"></span>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -746,7 +748,7 @@
         /*Hide/Unhide the handle init and the sidenav*/
         $('.side-nav-handle-init').toggle();
         $('.side-nav').slideToggle();
-    }
+    }    
 </script>
 
 </html>
