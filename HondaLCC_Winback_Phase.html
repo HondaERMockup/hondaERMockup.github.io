@@ -138,8 +138,8 @@
                                                         <div class="ng-scope validation">
                                                             <label style="display: inline-block" class="ng-binding ng-scope">Date Range</label>
 
-                                                            <select id="paramperiod0" class="form-control ng-untouched ng-valid ng-scope ng-not-empty select2-hidden-accessible ng-dirty" tabindex="-1"
-                                                                aria-hidden="true">
+                                                            <select id="paramperiod0" class="form-control ng-untouched ng-valid ng-scope ng-not-empty select2-hidden-accessible ng-dirty"
+                                                                tabindex="-1" aria-hidden="true">
                                                                     <option label="Custom" value="U" selected="selected">Custom</option>
                                                                     <option label="Last Month" value="LM">Last Month</option>
                                                                     <option label="Last Year" value="LY" selected="selected">Last Year</option>
@@ -208,6 +208,7 @@
                             <div class="ng-isolate-scope">
                                 <div class="square">
                                     <div class="pull-left">
+                                        <span class="heroBarBigSquareHeader"><strong>UIO By Segment</strong></span>
                                         <div class="square-large square-red">
                                             <h3 class="ng-binding">0.00% Active</h3>
                                         </div>
@@ -240,7 +241,7 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <div class="col-sm-9 pr-0">
+                        <div class="col-sm-9 pr-0 program-overview-section">
                             <h3 class="text-center ng-binding">Program Dashboard</h3>
                             <p class="fs16 ng-binding ng-scope">Program Objective: The movement of database customers into the Active segment from the New, Lapsed,
                                 and Inactive segments is the overall objective of the Honda LCC reporting environment.</p>
@@ -681,12 +682,15 @@
                                 <div class="col-sm-5 ng-scope">
                                     <form class="form-inline ng-pristine ng-valid">
                                         <div class="radio">
-                                            <img width="20" height="20" src="images/green.png">
+                                            <span class="indicator green">&nbsp;</span>
+                                            <sup class="fs14">
+                                                <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you are not enrolled in Honda Seasonal Communications for the current year."
+                                                    href="#"><i class="fa  fa-question-circle"></i></a>
+                                            </sup>
                                         </div>
                                         <a target="_blank" class="btn btn-default ng-binding" href="https://www.hondalcc.com/app/seasonal">ENROLL IN SEASONAL COMMUNICATIONS</a>
                                     </form>
-                                    <a class="ml-5" data-toggle="tooltip" title="This indicator will shade red if you are not enrolled in Honda Seasonal Communications."
-                                        href="#"><i class="fa  fa-question-circle"></i></a>
+
                                 </div>
                                 <div class="clearfix"></div>
                             </div>

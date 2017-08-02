@@ -8780,9 +8780,10 @@ label {
 
 .tooltip.fade {
     left: -20px !important;
+    width: 200px;
 }
 .tooltip.top .tooltip-arrow {
-    left: 23% !important;
+    left: 16% !important;
 }
 
 #countgraph, #countgraph2 {
@@ -9006,3 +9007,73 @@ label {
       top: -30px !important;*/
   }
 
+
+/* Indicator CSS */
+
+.radio {
+    margin-right: 8px;
+}
+
+.indicator {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.indicator.green {
+    background: rgba(158,236,125,1);
+    background: -moz-linear-gradient(top, rgba(158,236,125,1) 0%, rgba(47,161,12,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,236,125,1)), color-stop(100%, rgba(47,161,12,1)));
+    background: -webkit-linear-gradient(top, rgba(158,236,125,1) 0%, rgba(47,161,12,1) 100%);
+    background: -o-linear-gradient(top, rgba(158,236,125,1) 0%, rgba(47,161,12,1) 100%);
+    background: -ms-linear-gradient(top, rgba(158,236,125,1) 0%, rgba(47,161,12,1) 100%);
+    background: linear-gradient(to bottom, rgba(158,236,125,1) 0%, rgba(47,161,12,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9eec7d', endColorstr='#2fa10c', GradientType=0 );
+    border: #2e7b09 2px solid;
+}
+
+.indicator.red {
+    background: rgba(252,119,119,1);
+    background: -moz-linear-gradient(top, rgba(252,119,119,1) 0%, rgba(194,10,10,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,119,119,1)), color-stop(100%, rgba(194,10,10,1)));
+    background: -webkit-linear-gradient(top, rgba(252,119,119,1) 0%, rgba(194,10,10,1) 100%);
+    background: -o-linear-gradient(top, rgba(252,119,119,1) 0%, rgba(194,10,10,1) 100%);
+    background: -ms-linear-gradient(top, rgba(252,119,119,1) 0%, rgba(194,10,10,1) 100%);
+    background: linear-gradient(to bottom, rgba(252,119,119,1) 0%, rgba(194,10,10,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc7777', endColorstr='#c20a0a', GradientType=0 );
+    border: #830404 2px solid;
+}
+
+.indicatorLabel {
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+
+.program-overview-section {
+    color: #fff;
+    background-color: #007cc1;
+    height: 255px;
+    padding-top: 10px;
+}
+
+.container .dashboard {
+    padding: 0px;
+}
+
+.container .bdr-r {
+    padding: 10px 10px 10px 25px;
+}
+
+.program-overview-section .btn.btn-primary {
+    border: 3px solid #bbb !important;
+}
+.heroBarBigSquareHeader {
+    color: #000;
+    font-size: 15px;
+    margin-top: 6px;
+    position: absolute;
+    left: 18px;
+    top: 21px;
+}
